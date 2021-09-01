@@ -1,0 +1,189 @@
+---
+title: DOYOGA-填寫資料
+layout: ./app/layout.ejs
+engine: ejs
+current: surroundings
+---
+
+<section>
+  <div class="reservation">
+    <div class="pt-12 pb-22 | md:pt-16 md:pb-20 | lg:pb-26">
+      <div class="container">
+        <h2 class="text-2xl text-primary text-center mb-4">立即預約</h2>
+        <ul class="flex justify-center mb-8">
+          <li>
+            <div class="rounded-2xl overflow-hidden">
+              <span class="btn-large bg-warning text-secondary">選擇方案</span>
+            </div>
+          </li>
+          <li class="mx-4 | md:mx-7.5">
+            <div class="rounded-2xl overflow-hidden">
+              <span class="btn-large bg-primary text-white">填寫資料</span>
+            </div>
+          </li>
+          <li>
+            <div class="rounded-2xl overflow-hidden">
+              <span class="btn-large bg-warning text-secondary">完成預約</span>
+            </div>
+          </li>
+        </ul>
+        <div class="flex justify-center items-center mb-6 | lg:mb-8">
+          <span class="text-gray mr-4">您選擇的是</span>
+          <h3 class="text-lg text-secondary">首次體驗課程-基礎</h3>
+        </div>
+        <div class="mx-auto | md:w-1/2 lg:w-1/3">
+          <form>
+            <div class="mb-8">
+              <label for="choose" class="text-gray mb-4">1. 是否接觸過瑜珈?</label>
+              <div class="flex items-center">
+                <label class="radio mr-8">
+                  <div class="flex items-center">
+                    <input type="radio" id="choose" name="choose">
+                    <span class="radio__status"></span>
+                    <span class="text-gray">是</span>
+                  </div>
+                </label>
+                <label class="radio">
+                  <div class="flex items-center">
+                    <input type="radio" id="choose" name="choose">
+                    <span class="radio__status"></span>
+                    <span class="text-gray">否</span>
+                  </div>
+                </label>
+              </div>
+            </div>
+            <div class="mb-8">
+              <label for="problem" class="text-gray mb-4">2. 想改善的生活問題?</label>
+              <div class="flex flex-wrap">
+                <div class="w-1/3 mb-4">
+                  <label for="problem1" class="checkbox">
+                    <input type="checkbox" id="problem1">
+                    <span class="checkbox__status"></span>
+                    <span class="text-gray">肌耐力不足</span>
+                  </label>
+                </div>
+                <div class="w-1/3 mb-4">
+                  <label for="problem2" class="checkbox">
+                    <input type="checkbox" id="problem2">
+                    <span class="checkbox__status"></span>
+                    <span class="text-gray">柔軟度不佳</span>
+                  </label>
+                </div>
+                <div class="w-1/3 mb-4">
+                  <label for="problem3" class="checkbox">
+                    <input type="checkbox" id="problem3">
+                    <span class="checkbox__status"></span>
+                    <span class="text-gray">壓力大</span>
+                  </label>
+                </div>
+                <div class="w-1/3">
+                  <label for="problem4" class="checkbox">
+                    <input type="checkbox" id="problem4">
+                    <span class="checkbox__status"></span>
+                    <span class="text-gray">姿勢不正</span>
+                  </label>
+                </div>
+                <div class="w-1/3">
+                  <label for="problem5" class="checkbox">
+                    <input type="checkbox" id="problem5">
+                    <span class="checkbox__status"></span>
+                    <span class="text-gray">睡眠品質差</span>
+                  </label>
+                </div>
+                <div class="w-1/3">
+                  <label for="problem6" class="checkbox">
+                    <input type="checkbox" id="problem6">
+                    <span class="checkbox__status"></span>
+                    <span class="text-gray">注意力不足</span>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="mb-8">
+              <label for="time" class="text-gray mb-4">3. 每週累積運動量約為多少？</label>
+              <div class="flex flex-wrap">
+                <div class="w-1/2 mb-1">
+                  <label class="radio">
+                    <div class="flex items-center">
+                      <input type="radio" id="time" name="time">
+                      <span class="radio__status"></span>
+                      <span class="text-gray">150 分鐘以上</span>
+                    </div>
+                  </label>
+                </div>
+                <div class="w-1/2 mb-1">
+                  <label class="radio">
+                    <div class="flex items-center">
+                      <input type="radio" id="time" name="time">
+                      <span class="radio__status"></span>
+                      <span class="text-gray">75~150 分鐘</span>
+                    </div>
+                  </label>
+                </div>
+                <div class="w-1/2">
+                  <label class="radio">
+                    <div class="flex items-center">
+                      <input type="radio" id="time" name="time">
+                      <span class="radio__status"></span>
+                      <span class="text-gray">30~75 分鐘</span>
+                    </div>
+                  </label>
+                </div>
+                <div class="w-1/2">
+                  <label class="radio">
+                    <div class="flex items-center">
+                      <input type="radio" id="time" name="time">
+                      <span class="radio__status"></span>
+                      <span class="text-gray">30 分鐘以下</span>
+                    </div>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="mb-8">
+              <p class="text-gray mb-1">4. 上課預約報到日</p>
+              <p class="text-sm text-gray mb-2">若還沒有確定的日期，可以等待專員與您聯絡時再做詳細的諮詢哦！</p>
+              <input type="text" placeholder="MM/DD/YYYY" name="datepicker"
+                class="form-control--small border border-secondary w-30">
+            </div>
+            <div class="mb-8">
+              <p class="block text-gray mb-4">5. 填寫基本資料，完成預約後會寄送通知至電子信箱</p>
+              <div class="flex mb-4">
+                <div class="w-1/2 mr-2">
+                  <label for="name" class="text-primary mb-2">姓名</label>
+                  <input type="text" id="name" class="form-control--small border border-secondary w-full"
+                    placeholder="請輸入您的姓名">
+                </div>
+                <div class="w-1/2">
+                  <label for="age" class="text-primary mb-2">年齡</label>
+                  <input type="text" id="age" class="form-control--small border border-secondary w-full"
+                    placeholder="請輸入您的年齡">
+                </div>
+              </div>
+              <div class="mb-4">
+                <label for="sex" class="text-primary mb-2">性別</label>
+                <div class="form-select">
+                  <select class="form-control--small text-secondary border border-secondary">
+                    <option value="女" class="text-secondary">女</option>
+                    <option value="男" class="text-secondary">男</option>
+                  </select>
+                </div>
+              </div>
+              <div class="mb-4">
+                <label for="email" class="text-primary mb-2">電子信箱</label>
+                <input type="email" id="email" class="form-control--small border border-secondary w-full"
+                  placeholder="email@example.com">
+              </div>
+              <div class="mb-4">
+                <label for="tel" class="text-primary mb-2">手機號碼</label>
+                <input type="tel" id="tel" class="form-control--small border border-secondary w-full"
+                  placeholder="0912-345-678">
+              </div>
+            </div>
+            <a href="reservation3.html" class="btn btn-secondary text-center w-full">送出</a>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

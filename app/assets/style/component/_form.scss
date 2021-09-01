@@ -1,0 +1,119 @@
+::placeholder {
+  color: #907A7B !important;
+}
+
+.form-control {
+  padding: .5rem 1rem;
+}
+
+.form-control--small {
+  padding: .375rem .75rem;
+  border-radius: 4px;
+}
+
+.form--rounded {
+  border-radius: 4px 0 0 4px;
+}
+
+.radio {
+  display: flex;
+  align-items: center;
+  z-index: 2;
+  input[type="radio"] {
+    display: none;
+    &:checked {
+      ~ .radio__status {
+        &::before {
+          content: '';
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%,-50%);
+          width: 100%;
+          height: 100%;
+          background-color: #C0A4A5;
+          border-radius: 50%;
+        }
+        &::after {
+          content: '';  
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%,-50%);
+          width: 4px;
+          height: 4px;
+          background-color: #fff;
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+}
+
+.radio__status {
+  position: relative;
+  display: block;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 1px solid #C0A4A5;
+  margin-right: .25rem;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  z-index: 2;
+  input[type="checkbox"] {
+    display: none;
+    &:checked {
+      ~ .checkbox__status {
+        &::before {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 15px;
+          height: 8px;
+          transform: rotate(-55deg);
+          border-left: 3px solid #C0A4A5;
+          border-bottom: 3px solid #C0A4A5;
+        }
+      }
+    }
+  }
+}
+
+.checkbox__status {
+  position: relative;
+  display: block;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #C0A4A5;
+  border-radius: 4px;
+  margin-right: .25rem;
+}
+
+.form-select {
+  position: relative;
+  width: 65px;
+  select {
+    width: 100%;
+  }
+  &::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 12px;
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 6px 4px 0 4px;
+    border-color: #C0A4A5 transparent transparent transparent;
+  }
+}
+
+.form-select--width {
+  width: 105px;
+}
