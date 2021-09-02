@@ -1695,21 +1695,21 @@ span {
 
 @keyframes welcome-screen-intro-background {
   0% {
-    transform: skewX(0);
+    transform: skewY(0);
   }
 
   100% {
-    transform: skewX(135deg);
+    transform: skewY(135deg);
   }
 }
 
 @keyframes welcome-screen-outro-background {
   0% {
-    transform: skewX(-90deg);
+    transform: skewY(-90deg);
   }
 
   100% {
-    transform: skewX(90deg);
+    transform: skewY(90deg);
   }
 }
 
@@ -1748,12 +1748,12 @@ span {
 @keyframes welcome-screen-intro-logo {
   0% {
     opacity: 0;
-    transform: translateY(100%);
+    transform: translateX(-100%);
   }
 
   100% {
     opacity: 1;
-    transform: translateY(0);
+    transform: translateX(0);
   }
 }
 
