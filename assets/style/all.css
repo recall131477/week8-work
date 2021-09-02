@@ -1666,7 +1666,7 @@ span {
   left: 0;
   width: 100%;
   height: 100%;
-  background: #000;
+  background: #fff;
   pointer-events: none;
   z-index: 9999;
 }
@@ -1680,7 +1680,7 @@ span {
 }
 
 .loading.is-loaded .loading__logo {
-  animation: welcome-screen-outro-logo 0.3s both ease;
+  animation: welcome-screen-outro-logo 1.8s both ease;
 }
 
 .loading__background {
@@ -1689,27 +1689,27 @@ span {
   left: 0;
   width: 100%;
   height: 100%;
-  background: #fff;
+  background: #000;
   animation: welcome-screen-intro-background 0.9s both cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
 @keyframes welcome-screen-intro-background {
   0% {
-    transform: scaleX(0);
+    transform: skewX(0);
   }
 
   100% {
-    transform: scaleX(1);
+    transform: skewX(135deg);
   }
 }
 
 @keyframes welcome-screen-outro-background {
   0% {
-    transform: scaleX(0);
+    transform: skewX(-90deg);
   }
 
   100% {
-    transform: scaleX(1);
+    transform: skewX(90deg);
   }
 }
 
@@ -1748,7 +1748,7 @@ span {
 @keyframes welcome-screen-intro-logo {
   0% {
     opacity: 0;
-    transform: translateY(-100%);
+    transform: translateY(100%);
   }
 
   100% {
