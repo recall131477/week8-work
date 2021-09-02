@@ -1,14 +1,20 @@
 (function ($) {
   const preload = () => {
     //loading
-    setTimeout(function () {
-      $('.loading').addClass('is-loaded');
+    if ($('.home').length) {
       setTimeout(function () {
-        AOS.init({
-          once: true
-        });
-      }, 800);
-    }, 2500);
+        $('.loading').addClass('is-loaded');
+        setTimeout(function () {
+          AOS.init({
+            once: true
+          });
+        }, 1000);
+      }, 2500);
+    } else {
+      AOS.init({
+        once: true
+      });
+    }
   };
   const openMenu = () => {
     // 點擊漢堡選單顯示nav
