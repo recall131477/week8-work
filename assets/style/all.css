@@ -1705,11 +1705,11 @@ span {
 
 @keyframes welcome-screen-outro-background {
   0% {
-    transform: skewY(135deg) scale(1);
+    transform: skewY(135deg);
   }
 
   100% {
-    transform: skewY(45deg) scale(0);
+    transform: skewY(-90deg);
   }
 }
 
