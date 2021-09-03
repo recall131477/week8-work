@@ -1676,7 +1676,7 @@ span {
 }
 
 .loading.is-loaded .loading__background {
-  animation: welcome-screen-outro-background 0.9s reverse both cubic-bezier(0.645, 0.045, 0.355, 1);
+  animation: welcome-screen-outro-background 0.9s both cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
 .loading.is-loaded .loading__logo {
@@ -1705,11 +1705,11 @@ span {
 
 @keyframes welcome-screen-outro-background {
   0% {
-    transform: skewY(-90deg);
+    transform: skewY(135deg) scale(1);
   }
 
   100% {
-    transform: skewY(90deg);
+    transform: skewY(45deg) scale(0);
   }
 }
 
